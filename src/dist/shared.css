@@ -1,0 +1,22 @@
+/*****Variables********/
+/**********Fonts*************/
+@font-face {
+  font-family: Montserrat;
+  src: url(/assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-medium;
+  src: url(/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(/assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-black;
+  src: url(/assets/fonts/Montserrat/Montserrat-Black.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(/assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}

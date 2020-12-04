@@ -1,0 +1,248 @@
+/*****Variables********/
+/**********Fonts*************/
+@font-face {
+  font-family: Montserrat;
+  src: url(/assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-medium;
+  src: url(/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(/assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-black;
+  src: url(/assets/fonts/Montserrat/Montserrat-Black.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(/assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+body {
+  font-size: 0.875em;
+  font-family: Montserrat;
+  color: #3d4242;
+  overflow-x: hidden;
+}
+.background-popup {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+/************pop-up**************/
+.modals {
+  display: none;
+}
+.background-popup {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.background-grey {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3d4242b5;
+  z-index: 999;
+}
+.background-loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3d4242b5;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.pop-up {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 10px 30px 0 rgba(247, 213, 213, 0.2);
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+.z-index-sup2 {
+  z-index: 99999;
+}
+.modal-scroll {
+  overflow-y: scroll;
+  max-height: 70vh;
+  height: auto;
+  overflow-x: hidden;
+}
+.modal-header {
+  color: white;
+  border: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.modal-footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.message-general {
+  height: auto;
+  padding: 1.2rem 0.8rem;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  display: none;
+  position: fixed;
+  right: 0.938rem;
+  z-index: 99999;
+  width: 16rem;
+  top: 10px;
+}
+.message-general:hover {
+  opacity: 0.8;
+}
+.modal-full {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+}
+.modal-medium {
+  top: 0;
+  left: 0;
+  width: 85%;
+  height: 85%;
+  margin-bottom: 0px;
+}
+.modal-small {
+  top: 2em;
+  left: 0;
+  width: 50%;
+  margin-bottom: 0px;
+}
+.icon-close-modal {
+  width: 0.9rem;
+}
+.close-modal-icon {
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #ffcd00;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2.2rem;
+  cursor: pointer;
+  float: right;
+}
+* {
+  outline: none;
+}
+/**********General***********/
+.font-extra-small {
+  font-size: 0.563em;
+}
+.font-small {
+  font-size: 0.75em;
+}
+.font-medium {
+  font-size: 0.875em;
+}
+.font-big {
+  font-size: 1.125em;
+}
+.font-tittle-big {
+  font-size: 1.9em;
+}
+.font-regular {
+  font-family: Montserrat;
+}
+.font-montserrat-bold {
+  font-family: Montserrat-bold;
+}
+.font-montserrat-black {
+  font-family: Montserrat-black;
+}
+.font-montserrat-semibold {
+  font-family: Montserrat-SemiBold;
+}
+.c-pointer {
+  cursor: pointer;
+}
+.background-white {
+  background-color: white;
+}
+.background-color1 {
+  background: #22499A;
+}
+.color-1 {
+  color: #22499A;
+}
+.color-red {
+  color: #fb4d21;
+}
+.color-orange {
+  color: #f98728;
+}
+.color-2 {
+  color: #5FC5F2;
+}
+.color-white {
+  color: white;
+}
+.color-grey {
+  color: #989a9a;
+}
+.color-success {
+  color: #00cd98;
+}
+i:hover {
+  color: #5FC5F2;
+}
+i.fa-trash:hover {
+  color: #fb4d21;
+}
+.center-absolute {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.center-absolute-v-h {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.center-absolute-v {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.right-0 {
+  right: 0;
+}
+.top-0 {
+  top: 0;
+}

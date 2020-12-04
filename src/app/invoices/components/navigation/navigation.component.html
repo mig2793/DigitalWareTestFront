@@ -1,0 +1,18 @@
+<nav class="navbar shadow  navbar-expand-lg navbar-light bg-light font-montserrat-bold mb-4">
+    <a class="navbar-brand" href="#">
+        <img class="logo-dw" src="/assets/img/dw.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navInvoices"
+        aria-controls="navInvoices" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navInvoices">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link ml-3"  [routerLink]="['/']"
+            routerLinkActive="item-menu-activo">Facturas </a>
+            <a class="nav-item nav-link ml-3"  [routerLink]="['/crear-factura']">Nueva factura </a>
+        </div>
+    </div>
+</nav>
+<router-outlet>
+</router-outlet>

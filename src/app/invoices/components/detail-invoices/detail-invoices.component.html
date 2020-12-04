@@ -1,0 +1,55 @@
+<div>
+    <div class="background-popup"></div>
+    <div class="pop-up bg-transparent center-absolute-v shadow-none">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-12 col-md-6 col-lg-8 col-xl-7 align-self-center">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header background-color1 align-items-center">
+                        <span class="modal-title text-center font-montserrat-bold">
+                            DETALLE FACTURA
+                        </span>
+                        <div (click)="openModal()" class="close-modal-icon" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="modal-body modal-scroll">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span># Factura: {{invoice.id}}</span>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <span>Fecha: {{invoice.fecha | date:'longDate'}}</span>
+                            </div>
+                        </div>
+                        <div class="text-center my-4">
+                            <h4 class="font-montserrat-bold color-1">{{invoice?.clientes?.nombres}}
+                                {{invoice?.clientes?.apellidos}}</h4>
+                            <p class="font-montserrat-semibold color-1">{{invoice?.clientes?.documento}}</p>
+                        </div>
+                        <ul class="list-group">
+                            <li *ngFor="let product of invoice.detalle_factura"
+                                class="d-block mt-2">
+                                <div class="row">
+                                    <div class="col-md-4">{{product.productos.producto}}</div>
+                                    <div class="col-md-4 text-center">{{product.cantidad}} Uni.</div>
+                                    <div class="col-md-4 text-right">{{product.precio | currency:'':'symbol':'3.1-1'}}</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="my-4 d-flex justify-content-end align-items-center">
+                            <span class="font-montserrat-semibold font-big mr-3">Total:</span>
+                            <h5 class="font-montserrat-bold">{{invoice.total_factura | currency:'':'symbol':'3.1-1'}}
+                            </h5>
+                        </div>
+                        <div class="text-right">
+                            <span class="font-montserrat-semibold font-big mr-3">Pago en {{invoice.forma_pago.nombre}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="backg-grey"></div>
+</div>
